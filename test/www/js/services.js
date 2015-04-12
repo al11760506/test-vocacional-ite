@@ -13,17 +13,17 @@ angular.module('starter.services', [])
   }, {
     id: 1,
     name: 'Baltazar Bautista',
-    lastText: 'Did you get the ice cream?',
+    lastText: 'API - Data Base - Programmer',
     face: ''
   }, {
     id: 2,
     name: 'Javier Rochin',
-    lastText: 'I should buy a boat',
+    lastText: 'Documentation',
     face: ''
   }, {
     id: 3,
     name: 'Ivan Martinez',
-    lastText: 'Look at my mukluks!',
+    lastText: 'Programmer - Design',
     face: ''
   }];
 

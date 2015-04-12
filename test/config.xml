@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.myapp2218544" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.testite.firts1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>myapp2</name>
   <description>
-        An Ionic Framework and Cordova project.
+        app created to vocational guidance
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
+  <author email="al11760506" href="http://www.itensenada.edu.mx/~isantiago/WEB_MyAppTest/#">
       Ionic Framework Team
     </author>
   <content src="index.html"/>
