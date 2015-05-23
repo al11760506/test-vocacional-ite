@@ -67,7 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-  .state('tab.account', {
+ .state('tab.account', {
     url: '/account',
     views: {
       'tab-account': {
@@ -76,8 +76,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   });
-
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
 });
+
+function getValue(item){
+  var id=item.attributes['data-id'].value;
+  console.log('Valor');
+}

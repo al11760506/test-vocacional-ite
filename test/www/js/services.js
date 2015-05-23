@@ -4,28 +4,32 @@ angular.module('starter.services', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
-    id: 0,
-    name: 'Enrique Santiago',
-    lastText: 'API - Data Base - Programmer',
-    face: ''
-      
-  }, {
-    id: 1,
-    name: 'Baltazar Bautista',
-    lastText: 'API - Data Base - Programmer',
-    face: ''
-  }, {
-    id: 2,
-    name: 'Javier Rochin',
-    lastText: 'Documentation',
-    face: ''
-  }, {
-    id: 3,
-    name: 'Ivan Martinez',
-    lastText: 'Programmer - Design',
-    face: ''
-  }];
+  var chats = [ 
+      {
+       id: 0,
+       name: 'Bautista Baltazar',
+       lastText: 'API - Data Base - Programmer - Documenting',
+       face: 'img/1.jpg'
+      }, 
+      {
+       id: 1,
+       name: 'Martinez Ivan',
+       lastText: 'Designer - Programmer',
+       face: 'img/2.jpg'
+      },
+      {
+       id: 2,
+       name: 'Rochin Javier',
+       lastText: 'Documenting',
+       face: 'img/3.png'
+      },
+      {
+       id: 3,
+       name: 'Santiago Enrique',
+       lastText: 'API - Data Base - Programmer',
+       face: 'img/4.jpg'
+      }
+];
 
   return {
     all: function() {
