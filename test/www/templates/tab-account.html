@@ -1,0 +1,63 @@
+<ion-view view-title="Vocare">
+  <ion-content>
+
+  <div class="card">
+  <div class="item item-text-wrap">
+    Conocer y aplicar el marco legal en los sistemas mecánicos y electrónicos
+    <ion-toggle data-id="1" ng-model="enable.uno"></ion-toggle>
+  </div>
+
+   <div class="item item-text-wrap">
+    Valorar lo que la ciencia y tecnología aportan a la evolución humana. 
+    <ion-toggle data-id="1" ng-model="enable.dos"></ion-toggle>
+  </div>
+
+  <div class="item item-text-wrap">
+    Aplicar la instrumentación en la producción
+    <ion-toggle data-id="1" ng-model="enable.cuatro" n></ion-toggle>
+  </div>
+
+  <div class="item item-text-wrap">
+    Utilizar tecnologías eléctricas, electrónicas y herramientas computacionales.
+    <ion-toggle data-id="1" ng-model="enable.cinco"></ion-toggle>
+  </div>
+      
+  <div class="item item-text-wrap">
+    Diseñar e instrumentar modelos novedosos para la distribución de energía eléctrica.
+    <ion-toggle data-id="1" ng-model="enable.seis"></ion-toggle>
+  </div>
+            
+  <div class="item item-text-wrap">
+    Analizar, diseñar, innovar, implementar y evaluar sistemas y modelos administrativos.
+    <ion-toggle data-id="1" ng-model="enable.siete"></ion-toggle>
+  </div>
+
+  <div class="item item-text-wrap">
+    Diseñar programas de capacitación para los empleados de una empresa. 
+    <input ng-model="review.term" type="radio" value="si" /> Si
+    <input ng-model="review.term" type="radio" value="No" /> No
+  </div>
+
+  <ion-toggle ion-toggle-text ng-model="simple">
+  Ejemplo simple: <b>{{ simple || false }}</b>
+</ion-toggle>
+
+</div>
+      
+      <!--<div align="center" class="padding" ng-controller="PopupCtrl">
+         <button class="button button-full button-assertive" ng-click="LoginName()">
+           Login
+         </button>
+      </div>-->
+        <!--<button class="button button-full button-calm" ng-click="showAlert()">
+            Login
+        </button>-->
+      
+      
+      <div align="center" class="padding" ng-controller="PopupCtrl">
+         <button class="button button-full button-calm" ng-click="showAlert()">
+           Terminar Test
+         </button>
+      </div>
+  </ion-content>
+</ion-view>
