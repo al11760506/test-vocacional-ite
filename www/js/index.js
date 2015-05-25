@@ -114,3 +114,4 @@ function MyCtrl($scope, $ionicSlideBoxDelegate) {
 
   }
 }
+

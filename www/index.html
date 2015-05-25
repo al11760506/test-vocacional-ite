@@ -1,47 +1,277 @@
 <!DOCTYPE html>
-<html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>Bienvenido a vocare</title>
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html ng-app="ionicApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
     
-      
-    <!--  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>-->
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <title>Tabs Example</title>
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/index.js"></script>
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
-
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
+    
   </head>
-  <body ng-app="starter">
-    <!--
-      The nav bar that will be updated as we navigate between views.
-    -->
-    <ion-nav-bar class="bar-balanced">
+
+  <body>
+    
+    <ion-nav-bar class="bar-positive">
       <ion-nav-back-button>
       </ion-nav-back-button>
     </ion-nav-bar>
-
-
-
-    <!--
-      The views will be rendered in the <ion-nav-view> directive below
-      Templates are in the /templates folder (but you could also
-      have templates inline in this html file if you'd like).
-    -->
+             
     <ion-nav-view></ion-nav-view>
+
+
+    <script id="templates/tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-positive">
+
+        <ion-tab title="Home" icon="ion-home" href="#/tab/home">
+          <ion-nav-view name="home-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Test" icon="ion-ios-paper-outline" href="#/tab/about">
+          <ion-nav-view name="about-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Developers" icon="ion-person-stalker" ui-sref="tabs.contact">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+
+      </ion-tabs>
+    </script>
+
+    <script id="templates/home.html" type="text/ng-template">
+    
+      <ion-view view-title="Test Vocare" class="signup-background ">
+
+        <ion-content class="padding">
+            
+         
+          <p>
+         <a class="button icon icon-right ion-chevron-right button-calm" href="#/tab/facts">Conoce las carreras</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts.html" type="text/ng-template">
+      <ion-view view-title="Ingeniería en sistemas computacionales">
+        <ion-content class="padding">
+          <p>La ingeniería en sistemas computacionales o ingeniería informática es un modo de enfoque interdisciplinario que permite estudiar y comprender la realidad, con el propósito de implementar u optimizar sistemas informáticos complejos. Puede verse como la aplicación tecnológica de la teoría de sistemas a los esfuerzos de la ingeniería, adoptando en todo este trabajo el paradigma sistémico. La ingeniería en sistemas integra otras disciplinas y grupos de especialidad en un esfuerzo de equipo, formando un proceso de desarrollo estructurado.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">Ing.Industrial</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts2.html" type="text/ng-template">
+      <ion-view view-title="Ingeniería industrial">
+        <ion-content class="padding">
+          <p>La ingeniería industrial es una ciencia de la ingeniería que se ocupa del desarrollo, mejora, implantación y evaluación de sistemas integrados de gente, riqueza, conocimientos, información, equipamiento, energía, materiales y procesos. La ingeniería industrial utiliza los principios, métodos del análisis, síntesis de la ingeniería y el diseño para especificar, predecir y evaluar los resultados obtenidos de tales sistemas</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon ion-chevron-right" href="#/tab/facts3">Lic.Administración</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts3.html" type="text/ng-template">
+      <ion-view view-title="Lic.Administración">
+        <ion-content class="padding">
+          <p>La carrera de Licenciado en Administración aspira formar profesionales con suficientes capacidad para fomentar una visión integral sobre los objetivos de las organizaciones y sus estrategias mediante la planeación, la organización, la dirección y el control; en las instituciones públicas, privadas y sociales. </p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon ion-chevron-right" href="#/tab/facts4">Ing.Electromecánica</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+ <script id="templates/facts4.html" type="text/ng-template">
+      <ion-view view-title="Ingeniería Electromecánica">
+        <ion-content class="padding">
+          <p>La Ingeniería electromecánica es una ingeniería basada en la electromecánica, entendida como la aplicación híbrida que surge de la combinación sinérgica de distintas áreas del conocimiento, como el electromagnetismo, la electrónica, la electricidad y la mecánica. Se aplica principalmente en mecanismos eléctricos, máquinas industriales, generación y transformación de energía.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon ion-chevron-right" href="#/tab/facts5">Ing.Eletrónica</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+<script id="templates/facts5.html" type="text/ng-template">
+      <ion-view view-title="Ingeniería electrónica">
+        <ion-content class="padding">
+          <p>La Ingeniería electrónica es una rama de la ingeniería, basada en la electrónica, que se encarga de resolver problemas de la ingeniería tales como el control de procesos industriales, la transformación de la electricidad para el funcionamiento de diversos tipos y tiene aplicación en la industria, en las telecomunicaciones, en el diseño y análisis de instrumentación electrónica, microcontroladores y microprocesadores.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon ion-chevron-right" href="#/tab/facts6">Ing.Gestión empresarial</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts6.html" type="text/ng-template">
+      <ion-view view-title="Ingeniería Gestión empresarial">
+        <ion-content class="padding">
+          <p>	
+El Ingeniero en Gestión Empresarial fomenta y promueve el cambio organizacional en las instituciones, crea nuevas empresas, aplica los conocimientos adquiridos en sociología, derecho laboral, publicidad, procesos, calidad, mercadotecnia y comercio internacional entre otras, para diseñar procesos de mayor eficiencia, en áreas relacionadas con ventas, compras, producción, planeación y vinculación, manejo de roles de grupo y equipos de trabajo.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon ion-chevron-right" href="#/tab/facts7">Ing.Mecatrónica</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+ <script id="templates/facts7.html" type="text/ng-template">
+      <ion-view view-title="Ingeniería Mecatrónica">
+        <ion-content class="padding">
+          <p>	
+La ingeniería mecatrónica es una disciplina que une la ingeniería mecánica, ingeniería electrónica, ingeniería de control e ingeniería informática, y sirve para diseñar y desarrollar productos que involucren sistemas de control para el diseño de productos o procesos inteligentes, lo cual busca crear maquinaria más compleja para facilitar las actividades del ser humano a través de procesos electrónicos en la industria mecánica, principalmente. Debido a que combina varias ingenierías en una sola, su punto fuerte es la versatilidad.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+           
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+    <script id="templates/about.html" type="text/ng-template">
+      <ion-view view-title="Vocare">
+        <ion-content class="padding">
+          <h3>¿Listo para empezar?</h3>
+          <p>Por favor responde con franqueza y honestidad, eso te ayudara a observar tus posibles opciones de carrera.</p>
+          <p>Presiona el boton para empezar</p>
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/navstack">Empezar</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/nav-stack.html" type="text/ng-template">
+ <ion-view view-title="Tes vocacional-Vocare">
+    
+         
+<ion-slide-box active-slide="myActiveSlide">
+  <ion-slide>
+  <IMG SRC="img/c.jpg" WIDTH=50 HEIGHT=55 BORDER=2>
+    <div ><h4>¿Diseñar algoritmos e implementarlas como código de programación?</h4>
+<!--sistemas-->
+<div>
+        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
+      </div>
+      <div>
+        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
+      </div>
+
+    </div>
+  </ion-slide>
+  <ion-slide>
+  <IMG SRC="img/d.jpg" WIDTH=50 HEIGHT=55 BORDER=2>
+   <div ><h4>¿Diagnosticar e Innovar sistemas electromecánicos en forma eficiente?</h4>
+<!--industrial-->
+<div>
+        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
+      </div>
+      <div>
+        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
+      </div>
+
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <IMG SRC="img/e.jpg" WIDTH=50 HEIGHT=55 BORDER=2>
+   <div ><h4>¿Realizar entrevistas para la sección de personal?</h4>
+<!--administracion-->
+<div>
+        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
+      </div>
+      <div>
+        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
+      </div>
+
+    </div>
+
+  </ion-slide>
+
+
+   <ion-slide>
+    <IMG SRC="img/f.jpg" WIDTH=50 HEIGHT=55 BORDER=2>
+   <div ><h4>¿Conocer la resistencia de los materiales aislantes de electricidad?</h4>
+<!--electromecanica-->
+<div>
+        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
+      </div>
+      <div>
+        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
+      </div>
+
+    </div>
+
+  </ion-slide>
+
+
+ 
+</ion-slide-box>
+
+          
+  
+      </ion-view>
+
+
+      
+    </script>
+
+    <script id="templates/contact.html" type="text/ng-template">
+      <ion-view title="Developers">
+        <ion-content>
+          <div class="list">
+            <div class="item">
+              <p>Gustavo Ivan Martinez Linares
+              <p>al11760506@ite.edu.mx
+            </div>
+            <div class="item">
+              <p>Santiago Ignacio Enrique
+              <p>al11760@ite.edu.mx
+            </div>
+             <div class="item">
+              <p>Baltazar Bautista Velasco
+              <p>al11760364@ite.edu.mx
+            </div>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+  </body>
+</html>
+    
+        
+    
+    
+    
   </body>
 </html>
