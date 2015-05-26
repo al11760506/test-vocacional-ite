@@ -86,3 +86,6 @@ input[type=radio]:not(old):checked +  label > span > span{
     background-image: url('../img/logo.PNG')
 }
 
+body {
+  cursor: url('../img/finger.png'), auto;
+}
