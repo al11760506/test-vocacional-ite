@@ -33,11 +33,17 @@ body {
   cursor: url('../img/finger.png'), auto;
 }
 
-p {
-  text-align: center;
-  margin-bottom: 40px !important;
+
+#titlep{
+
+
 }
-.spinner svg {
-  width: 19% !important;
-  height: 85px !important;
+
+#ter{
+
+height: 100%;
+margin-left:100%;
+  color: black;
+  background-color: white;
+
 }

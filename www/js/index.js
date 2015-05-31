@@ -194,14 +194,13 @@ document.getElementById("showme21").innerHTML = '%';
 
 
 }
-/*
+
 $scope.limpiar=function limpiar()
 
 {
-   document.getElementById("content").innerHTML="<output id='showme1'></output><output id='showme2'></output><output id='showme3'></output>";
+   document.getElementById("content").innerHTML='<output id="showme1"></output><output id="showme2"></output><output id="showme3"></output><br /><output id="showme4"></output><output id="showme5"></output><output id="showme6"></output><br /><output id="showme7"></output><output id="showme8"></output><output id="showme9"></output><br /><output id="showme10"></output><output id="showme11"></output><output id="showme12"></output><br /><output id="showme13"></output><output id="showme14"></output><output id="showme15"></output><br /><output id="showme16"></output><output id="showme17"></output><output id="showme18"></output><br /><output id="showme19"></output><output id="showme20"></output><output id="showme21"></output><br />';
 
 }
-*/
 
 
 // function to sum every race reagents
@@ -248,282 +247,282 @@ $scope.preguntas=[
        id: 2,
        pregun: 'Diagnosticar e Innovar sistemas electromecánicos en forma eficiente.',
        id_carrera: 2,
-       image:'../img/2.jpg'
+       image:'img/2.jpg'
       },
       {
        id: 3,
        pregun: 'Realizar entrevistas para la sección de personal.',
        id_carrera: 3,
-       image:'../img/3.jpg'
+       image:'img/3.jpg'
       },
       {
        id: 4,
        pregun: 'Conocer la resistencia de los materiales aislantes de electricidad.',
        id_carrera: 4,
-       image:'../img/4.jpg'
+       image:'img/4.jpg'
       },
       {
        id: 5,
        pregun: 'Conocer los componentes de un aparato electrónico.',
        id_carrera: 5,
-       image:'../img/5.jpg'
+       image:'img/5.png'
       },
       {
        id: 6,
        pregun: 'Diseñar sistemas estratégicos de negocios.',
        id_carrera: 6,
-       image:'../img/6.jpg'
+       image:'img/6.jpg'
       },
       {
        id: 7,
        pregun: 'Analizar, interpretar, evaluar, diseñar y crear sistemas mecatrónicas.',
        id_carrera: 7,
-       image:'../img/7.jpg'
+       image:'img/7.jpg'
       },
       {
        id: 8,
        pregun: 'Desarrollar aplicaciones para dispositivos móviles.',
        id_carrera: 1,
-       image:'../img/8.jpg'
+       image:'img/8.jpg'
       },
       {
        id: 9,
        pregun: 'Idear aparatos para ser implementadas en empresas.',
        id_carrera: 2,
-       image:'../img/9.jpg'
+       image:'img/9.jpg'
       },
       {
        id: 10,
        pregun: 'Adquirir la capacidad de enfrentar los retos del entorno empresarial.',
        id_carrera: 3,
-       image:'../img/10.jpg'
+       image:'img/10.jpg'
       },
       {
        id: 11,
        pregun: 'Diseñar e instrumentar modelos novedosos para la distribución de energía eléctrica.',
        id_carrera: 4,
-       image:'../img/11.jpg'
+       image:'img/11.jpg'
       },
       {
        id: 12,
        pregun: 'Diseñar sistemas de telecomunicación digital.',
        id_carrera: 5,
-       image:'../img/12.jpg'
+       image:'img/12.jpg'
       },
       {
        id: 13,
        pregun: 'Diseñar y dirigir programas de capacitación para los empleados de una empresa.',
        id_carrera: 6,
-       image:'../img/13.jpg'
+       image:'img/13.jpg'
       },
       {
        id: 14,
        pregun: 'Instalar, construir, optimizar, operar y controlar sistemas mecatrónicas.',
        id_carrera: 7,
-       image:'../img/14.jpg'
+       image:'img/14.jpg'
       },
       {
        id: 15,
        pregun: 'Desarrollar y diseñar sistemas computacionales.',
        id_carrera: 1,
-       image:'../img/15.jpg'
+       image:'img/15.jpg'
       },
       {
        id: 16,
        pregun: 'Desarrollar modelos matemáticos, estadísticos y de simulación',
        id_carrera: 2,
-       image:'../img/16.jpg'
+       image:'img/16.jpg'
       },
       {
        id: 17,
        pregun: 'Analizar e interpretar información administrativa, económica, financiera, legal y social.',
        id_carrera: 3,
-       image:'../img/17.jpg'
+       image:'img/17.jpg'
       },
       {
        id: 18,
        pregun: 'Diseñar y operar sistemas de control eléctrico.',
        id_carrera: 4,
-       image:'../img/18.jpg'
+       image:'img/18.jpg'
       },
       {
        id: 19,
        pregun: 'Diseñar circuitos electrónicos con microcontroladores.',
        id_carrera: 5,
-       image:'../img/19.jpg'
+       image:'img/19.png'
       },
       {
        id: 20,
        pregun: 'Gestionar modelos, procesos y sistemas empresariales.',
        id_carrera: 6,
-       image:'../img/20.jpg'
+       image:'img/20.jpg'
       },
       {
        id: 21,
        pregun: 'Utilizar tecnologías eléctricas, electrónicas y herramientas computacionales.',
        id_carrera: 7,
-       image:'../img/21.jpg'
+       image:'img/21.jpg'
       },
       {
        id: 22,
        pregun: 'Instalar y configurar diversos dispositivos de una red de cómputo.',
        id_carrera: 1,
-       image:'../img/22.jpg'
+       image:'img/22.jpg'
       },
       {
        id: 23,
        pregun: 'Utilizar tecnología innovadora en empresas públicas o privadas.',
        id_carrera: 2,
-       image:'../img/23.jpg'
+       image:'img/23.jpg'
       },
       {
        id: 24,
        pregun: 'Realizar compras, ventas y negocios a nivel internacional.',
        id_carrera: 3,
-       image:'../img/24.jpg'
+       image:'img/24.jpg'
       },
       {
        id: 25,
        pregun: 'Implementar sistemas de mantenimiento eléctrico.',
        id_carrera: 4,
-       image:'../img/25.jpg'
+       image:'img/25.jpg'
       },
        {id: 26,
        pregun: 'Integrar sistemas electrónicos en dispositivos.',
        id_carrera: 5,
-       image:'../img/26.jpg'
+       image:'img/26.jpg'
       },
       {
        id: 27,
        pregun: 'Organizar proyectos de crecimiento empresarial.',
        id_carrera: 6,
-       image:'../img/27.jpg'
+       image:'img/27.jpg'
       },
       {
        id: 28,
        pregun: 'Aplicar la robótica a la producción de bienes.',
        id_carrera: 7,
-       image:'../img/28.jpg'
+       image:'img/28.jpg'
       },
       {
        id: 29,
        pregun: 'Desarrollar una página web con diferentes herramientas de programación.',
        id_carrera: 1,
-       image:'../img/29.jpg'
+       image:'img/29.jpg'
       },
       {
        id: 30,
        pregun: 'Conocer los procesos y tecnologías usados en la elaboración de alimentos.',
        id_carrera: 2,
-       image:'../img/30.jpg'
+       image:'img/30.jpg'
       },
       {
        id: 31,
        pregun: 'Analizar, diseñar, innovar, implementar y evaluar sistemas y modelos administrativos.',
        id_carrera: 3,
-       image:'../img/31.jpg'
+       image:'img/31.jpg'
       },
       { id: 32,
        pregun: 'Desarrollar modelos de redes eléctricas eficientes y económicas.',
        id_carrera: 4,
-       image:'../img/32.jpg'
+       image:'img/32.jpg'
       },
       {
        id: 33,
        pregun: 'Diagnosticar integralmente la situación electrónica de una empresa.',
        id_carrera: 5,
-       image:'../img/33.jpg'
+       image:'img/33.jpg'
       },
       {
        id: 34,
        pregun: 'Gestionar la creación de negocios innovadores.',
        id_carrera: 6,
-       image:'../img/34.jpg'
+       image:'img/34.jpg'
       },
       {
        id: 35,
        pregun: 'Interpretar información técnica de ingeniería mecánica y electrónica.',
        id_carrera: 7,
-       image:'../img/35.jpg'
+       image:'img/35.jpg'
       },
        {id: 36,
        pregun: 'Solucionar problemas informáticos de software.',
        id_carrera: 1,
-       image:'../img/36.jpg'
+       image:'img/36.jpg'
       },
       {
        id: 37,
        pregun: 'Realizar proyectos de procesos productivos',
        id_carrera: 2,
-       image:'../img/37.jpg'
+       image:'img/37.jpg'
       },
       {
        id: 38,
        pregun: 'Evaluar operaciones empresariales como ventas, compras, costos, ganancias, etc',
        id_carrera: 3,
-       image:'../img/38.jpg'
+       image:'img/38.jpg'
       },
       {
        id: 39,
        pregun: 'Desempeñarme en el area de mantenimiento tecnico en empresas de aire acondicionado y refrigeración',
        id_carrera: 4,
-       image:'../img/39.jpg'
+       image:'img/39.jpg'
       },
       { id: 40,
        pregun: 'Diseñar y desarrollar proyectos electrónicos',
        id_carrera: 5,
-       image:'../img/40.jpg'
+       image:'img/40.jpg'
       },
       {
        id: 41,
        pregun: 'Tener habilidad para la creación e innovación de una empresa',
        id_carrera: 6,
-       image:'../img/41.jpg'
+       image:'img/41.jpg'
       },
       { id: 42,
        pregun: 'Identificar las vibraciones mecánicas y electromagnéticas',
        id_carrera: 7,
-       image:'../img/42.jpg'
+       image:'img/42.jpg'
       },
       {
        id: 43,
        pregun: 'Desarrollar, diseñar y crear animaciones para juegos',
        id_carrera: 1,
-       image:'../img/43.jpg'
+       image:'img/43.jpg'
       },
       { id: 44,
        pregun: 'Conocer y dirigir el proceso de elaboración de todo tipo de productos',
        id_carrera: 2,
-       image:'../img/44.jpg'
+       image:'img/44.jpg'
       },
       {
        id: 45,
        pregun: 'Conocer las leyes en impuestos aplicables a las empresas',
        id_carrera: 3,
-       image:'../img/45.jpg'
+       image:'img/45.jpg'
       },
       { id: 46,
        pregun: 'Cómo generar energía eléctrica a bajo costo',
        id_carrera: 4,
-       image:'../img/46.jpg'
+       image:'img/46.jpg'
       },
       {
        id: 47,
        pregun: 'Programación lógica de controladores',
        id_carrera: 5,
-       image:'../img/47.jpg'
+       image:'img/47.jpg'
       },
       {
        id: 48,
        pregun: 'Formular estrategias para disminuir costos en los precios de productos internacionales',
        id_carrera: 6,
-       image:'../img/48.jpg'
+       image:'img/48.jpg'
       },
       {
        id: 49,
        pregun: 'Implementar proyectos mecánicos y electrónicos',
        id_carrera: 7,
-       image:'../img/49.jpg'
+       image:'img/49.jpg'
       }
 ];
 
