@@ -1,24 +1,29 @@
 
-
+<!--This is a view from the window-->
 <ion-view view-title="Tes vocacional-Vocare">
     
-         
+      <!-- This is the box slides-->   
 <ion-slide-box active-slide="myActiveSlide">
 
+<!-- get the questions and store in n-->
   <ion-slide ng-repeat="n in preguntas" >
 
-  <IMG SRC="img/c.jpg" WIDTH=60 HEIGHT=65 BORDER=2>
-  
-<h2 ng-show="showme">This is mah content, yo!</h2>
-    <div ><h4>{{n.pregun}}</h4>
+<!-- show the image of the question-->
+<img ng-src='n.image'>
+<!-- show the question-->
+    <div ><h3>¿{{n.pregun}}?</h3>
 
 
 
 
 <!--sistemas-->
 
+<!--buttons radio, the function seleccion is responsible for making all the logic test -->
       <ion-radio  ng-value="'A'" ng-click="seleccion(n.id_carrera)" >Me interesa</ion-radio>
       <ion-radio ng-value="'B'"  >No me interesa</ion-radio>
+
+<!--button , the function takes out the percentages according alo responded by user -->
+ <a class="button icon ion-checkmark" href="#/tab/final">Terminar</a>
 
     </div>
   </ion-slide>
