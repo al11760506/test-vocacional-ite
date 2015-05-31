@@ -5,130 +5,26 @@
          
 <ion-slide-box active-slide="myActiveSlide">
 
-  <ion-slide>
+  <ion-slide ng-repeat="n in preguntas" >
+
   <IMG SRC="img/c.jpg" WIDTH=60 HEIGHT=65 BORDER=2>
-    <div ><h4>¿Diseñar algoritmos e implementarlas como código de programación?</h4>
+  
+<h2 ng-show="showme">This is mah content, yo!</h2>
+    <div ><h4>{{n.pregun}}</h4>
+
+
+
+
 <!--sistemas-->
-      <div>
-       <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
-      </div>
-      <div>
-        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
-      </div>
+
+      <ion-radio  ng-value="'A'" ng-click="seleccion(n.id_carrera)" >Me interesa</ion-radio>
+      <ion-radio ng-value="'B'"  >No me interesa</ion-radio>
 
     </div>
   </ion-slide>
   
 
 
-  <ion-slide>
-  <IMG SRC="img/d.jpg" WIDTH=60 HEIGHT=65 BORDER=2>
-   <div ><h4>¿Diagnosticar e Innovar sistemas electromecánicos en forma eficiente?</h4>
-<!--industrial-->
-<div>
-        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
-      </div>
-      <div>
-        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
-      </div>
-    </div>
- 
-
-  </ion-slide>
-  <ion-slide>
-    <IMG SRC="img/e.jpg" WIDTH=60 HEIGHT=65 BORDER=2>
-   <div ><h4>¿Realizar entrevistas para la sección de personal?</h4>
-<!--administracion-->
-<div>
-        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
-      </div>
-      <div>
-        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
-      </div>
-
-    </div>
-
-  </ion-slide>
-
-
-   <ion-slide>
-    <IMG SRC="img/f.jpg" WIDTH=60 HEIGHT=65 BORDER=2>
-   <div ><h4>¿Conocer la resistencia de los materiales aislantes de electricidad?</h4>
-<!--electromecanica-->
-<div>
-        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
-      </div>
-      <div>
-        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
-      </div>
-
-    </div>
-
-  </ion-slide>
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
- <ion-slide>
-    <IMG SRC="img/g.jpg" WIDTH=50 HEIGHT=55 BORDER=2>
-   <div ><h4>¿Conocer los componentes de un aparato electrónico.?</h4>
-<!--electronica-->
-<div>
-        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
-      </div>
-      <div>
-        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
-      </div>
-
-    </div>
-
-  </ion-slide>
- 
-
-
-
- <ion-slide>
-    <IMG SRC="img/h.jpg" WIDTH=50 HEIGHT=55 BORDER=2>
-   <div ><h4>¿Diseñar sistemas estratégicos de negocios?</h4>
-<!--Gestion-->
-<div>
-        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
-      </div>
-      <div>
-        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
-      </div>
-
-    </div>
-
-
-   </ion-slide>
-
-
- <ion-slide>
-    <IMG SRC="img/i.jpg" WIDTH=50 HEIGHT=55 BORDER=2>
-   <div ><h4>¿Analizar, interpretar, evaluar, diseñar y crear sistemas mecatrónicas?</h4>
-<!--Gestion-->
-<div>
-        <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Acuerdo</label>
-      </div>
-      <div>
-        <input id="radio2" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Desacuerdo</label>
-      </div>
-
-    </div>
-
-  </ion-slide>
- 
 </ion-slide-box>
   
 
