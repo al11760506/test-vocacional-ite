@@ -9,20 +9,18 @@
 <!-- get the questions and store in n-->
   <ion-slide ng-repeat="n in preguntas" >
  
-<!-- show the image of the question-->
+
 
 <!-- show the question-->
     <div ><h3>¿{{n.pregun}}?</h3></div>
 
  
-<img src="{{n.image}}" height="60" width="60">
-  
 
 <!--sistemas-->
 
 <!--buttons radio, the function seleccion is responsible for making all the logic test -->
 <div>
-      <ion-radio  ng-value="'A'" ng-click="seleccion(n.id_carrera)" >Me interesa</ion-radio>
+      <ion-radio ng-value="'A'" ng-click="seleccion(n.id_carrera)" >Me interesa</ion-radio>
       <ion-radio ng-value="'B'"  >No me interesa</ion-radio>
 
     </div>
