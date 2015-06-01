@@ -16,7 +16,7 @@
 .slider-slide {
   padding-top: 100px;
   color: #000;
-  background-color: yellow;
+  background-color:LightSkyBlue   ;
   text-align: center;
 
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -38,3 +38,4 @@ body {
 
 margin-top: 65px;
 }
+
